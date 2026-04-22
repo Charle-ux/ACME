@@ -16,6 +16,13 @@ body{
     margin: 0 auto;
 }
 
+.sub-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
 h1,h2,h3{
     font-size: 35px;
     font-weight: 700;
@@ -28,8 +35,14 @@ h1{
     font-weight: 400;
 }
 
+h2{
+    color: #f4f4f4;
+    font-weight: 100;
+    font-size: 30px;
+}
+
 h3{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 p{
@@ -48,18 +61,21 @@ a{
 
 .nav-bar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     background-color: #35424a;
     height: 50px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     border-bottom: 3px solid red ;
+    padding: 10px;
 }
 
 .nav-bar-anchor{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    list-style: none;
 }
 
 .header{
@@ -101,6 +117,25 @@ a{
 .style-2{
     padding: 5px;
     background-color: #e8491d;
+}
+
+.div-styles{
+    background-color: #cccccc;
+    border-bottom: 2px solid white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.div-styles-2{
+    background-color: #35424a;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 250px;
 }
 
 .main{
@@ -145,4 +180,14 @@ a{
 
 .div-text{
     background-color: #35424a;
+    height: 300px;
+}
+
+/* .div-text-1{ */
+    /* height: 300px; */
+/* } */
+
+.button-class{
+    background-color: #e8491d;
+    padding: 10px;
 }
