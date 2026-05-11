@@ -17,6 +17,7 @@ body{
 
 .container{
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -81,6 +82,7 @@ a{
     flex-direction: row;
     gap: 10px;
     list-style: none;
+    font-size: 1.5rem;
 }
 
 .header{
@@ -118,7 +120,8 @@ a{
 }
 
 .style-1{
-    /* padding: 15px 0px ; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .style-2{
