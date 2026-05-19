@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 html{
@@ -69,7 +70,7 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: #35424a;
-    height: 50px;
+    height: 60px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     border-bottom: 3px solid red ;
@@ -100,12 +101,18 @@ a{
     gap: 20px;
 }
 
+.H-Text{
+    color: black;
+    margin-bottom: 10px;
+
+}
+
 .section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #35424a;
-    height: 50px;
+    height: 60px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     color: #f4f4f4;
@@ -120,8 +127,8 @@ a{
 }
 
 .style-1{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .style-2{
@@ -146,6 +153,29 @@ a{
     gap: 10px;
     padding: 10px;
     height: 250px;
+    color: #f4f4f4;
+}
+
+.div-text{
+    background-color: #35424a;
+    color: #f4f4f4;
+    height: 350px;
+    padding: 10px;
+}
+
+.div-main-text{
+    width: 65%;
+}
+
+.div-text-display{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #f4f4f4;
+    background-color: #35424a;
+    width: 35%;
+    height: 400px;
+    padding: 15px;
 }
 
 .main{
@@ -192,15 +222,6 @@ a{
 .img{
     width: 50px;
 }
-
-.div-text{
-    background-color: #35424a;
-    height: 300px;
-}
-
-/* .div-text-1{ */
-    /* height: 300px; */
-/* } */
 
 .button-class{
     background-color: #e8491d;
