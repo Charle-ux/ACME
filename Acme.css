@@ -4,21 +4,69 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* font size
+    other fontsize notation system includes 
+    md(medium) l(large) xl(extra large) 2xl 3xl e.t.c */
+
+    --txt-sm: 1rem;
+    --text-sm: 1.2rem;
+    --text-base: 1.5rem;
+    --text-paragraph: 2rem;
+    --text-h5: 2.4rem;
+    --text-h4: 3rem;
+    --text-h3: 4rem;
+    --text-h2: 4.8rem;
+    --text-h1: 6rem;
+    --max-width: 120rem;
+
+    /* FONT WEIGHT */
+
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-bold:700;
+
+    /* LINE HEIGHT */
+
+    --line-height-tight: 1.2;
+    --line-height-normal:1.5;
+
+    /* LETTER SPACING */
+
+    --letter-spacing-tight:-2px;
+
+    /* FONT-FAMILY */
+
+    --font-family:'poppins', sans-serif;
+
+    /* COLORS */
+
+    --primary-tint: #e8491d;
+    --primary-shade: #32a091;
+    --grey-Shade:#35424a;
+    --White:#f4f4f4;
+    --Black:#333333;
+    --tertiary-tint: #cccccc;
+
+    /* MISCELLANEOUS */
+    
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
     font-family:'poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
     overflow-x: hidden;
-    background-color: #f4f4f4;
+    background-color: var(--White);
 }
 
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
@@ -26,64 +74,63 @@ body{
     width: 90%;
     margin: 0 auto;
     display: flex;
-    gap: 20px;
+    gap: var(--text-paragraph)
 }
 
 h1,h2,h3{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 700;
-    letter-spacing: -2px;
-    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
 }
 
 h1{
-    color: #f4f4f4;
+    color: var(--White);
 }
 
 h2{
     color: #f4f4f4;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: var(--font-weight-bold);
+    font-size:  var(--text-h4);
 }
 
 h3{
-    font-size: 20px;
+    font-size: var(--text-paragraph);
 }
 
 p{
-    font-size: 15px;
+    font-size: 1.5rem;
     /* color: #f4f4f4; */
 }
 
 a{
     text-decoration: none;
-    color: #f4f4f4;
+    color: var(--White);
     display: inline-block;
 }
 
 .span-text{
-    color: #e8491d;
+    color: var(--primary-tint);
 }
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #35424a;
-    height: 60px;
+    background-color: var(--grey-Shade);
+    height: var(--text-h1);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     border-bottom: 3px solid red ;
-    padding: 0 60px;
-    box-sizing: border-box;
+    padding: 0  var(--text-h1);
 }
 
 .nav-bar-anchor{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: var(--text-sm);
     list-style: none;
-    font-size: 1.5rem;
+    font-size: var(--text-base);
 }
 
 .header{
@@ -98,12 +145,12 @@ a{
     margin-left: calc(-50vw + 50%);
     background-size: cover;
     background-position: 50% 50%;
-    gap: 20px;
+    gap: var(--text-paragraph);
 }
 
 .H-Text{
-    color: black;
-    margin-bottom: 10px;
+    color: var(--Black);
+    margin-bottom: var(--text-sm);
 
 }
 
@@ -111,12 +158,12 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #35424a;
-    height: 60px;
+    background-color: var(--grey-Shade);
+    height: var(--text-h1);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    color: #f4f4f4;
-    margin-bottom: 15px;
+    color: var(--White);
+    margin-bottom: var(--text-base);
 }
 
 .sub-section{
@@ -127,40 +174,40 @@ a{
 }
 
 .style-1{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: var(--text-sm);
+    padding-bottom: var(--text-sm);
 }
 
 .style-2{
     padding: 5px;
-    background-color: #e8491d;
+    background-color: var(--primary-tint);
 }
 
 .div-styles{
-    background-color: #cccccc;
-    border-bottom: 2px solid white;
-    height: 150px;
+    background-color: var(--tertiary-tint);
+    border-bottom: 2px solid var(--White);
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    padding: var(--text-base);
 }
 
 .div-styles-2{
-    background-color: #35424a;
+    background-color: var(--grey-Shade);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    height: 250px;
-    color: #f4f4f4;
+    gap: var(--text-sm);
+    padding: var(--text-sm);
+    height: 25rem;
+    color: var(--White);
 }
 
 .div-text{
     background-color: #35424a;
-    color: #f4f4f4;
-    height: 350px;
-    padding: 10px;
+    color: var(--White);
+    height: 35rem;
+    padding: var(--text-sm);
 }
 
 .div-main-text{
@@ -170,12 +217,12 @@ a{
 .div-text-display{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: #f4f4f4;
-    background-color: #35424a;
+    gap: var(--text-sm);
+    color: var(--White);
+    background-color: var(--grey-Shade);
     width: 35%;
-    height: 400px;
-    padding: 15px;
+    height: 40rem;
+    padding: var(--text-base);
 }
 
 .main{
@@ -190,44 +237,44 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: var(--text-paragraph);
 }
 
 .main-class{
     display: flex;
-    gap: 10px;
+    gap: var(--text-sm);
 }
 
 .footer-class{
     text-align: center;
-    background-color: #e8491d;
-    height: 50px;
+    background-color: var(--primary-tint);
+    height: 5rem;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: var(--text-base);
 }
 
 .p-text{
-    color: #f4f4f4;
+    color: var(--White);
 }
 
 .text{
-    font-weight: 600;
+    font-weight: var(--font-weight-medium);
 }
 
 .img{
-    width: 50px;
+    width: 5rem;
 }
 
 .button-class{
-    background-color: #e8491d;
-    padding: 10px;
+    background-color: var(--primary-tint);
+    padding: var(--text-sm);
 }
 
 .Active{
-    color: #e8491d;
+    color:  var(--primary-tint);
 }

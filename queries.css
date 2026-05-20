@@ -1,0 +1,9 @@
+/*  MD - TABLETS: 768px - 1024px*/
+  /*  950px / 16px = 60rem
+  60rem x 16px =960px */
+
+  @media(max-width: 60rem)
+
+
+/*  SM - PHONE LANDSCAPE: 576px - 768px*/
+/* XS - PHONE IN PORTRAiT: < 576px */
