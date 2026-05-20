@@ -173,6 +173,10 @@ a{
     gap: 5px;
 }
 
+.text{
+    font-weight: var(--font-weight-medium);
+}
+
 .style-1{
     padding-top: var(--text-sm);
     padding-bottom: var(--text-sm);
@@ -258,12 +262,11 @@ a{
     margin-top: var(--text-base);
 }
 
+.form-class{
+    gap: var(--text-sm);
+}
 .p-text{
     color: var(--White);
-}
-
-.text{
-    font-weight: var(--font-weight-medium);
 }
 
 .img{

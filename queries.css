@@ -1,9 +1,125 @@
 /*  MD - TABLETS: 768px - 1024px*/
-  /*  950px / 16px = 60rem
+
+@media(max-width: 60rem){
+     /*  950px / 16px = 60rem
   60rem x 16px =960px */
-
-  @media(max-width: 60rem)
-
+    html{
+        font-size: 56.25%;
+        /* 9px / 16px = 56.25%  */
+    }
+}
 
 /*  SM - PHONE LANDSCAPE: 576px - 768px*/
-/* XS - PHONE IN PORTRAiT: < 576px */
+
+@media(max-width: 48rem){
+    /* 768px / 16px = 48rem
+48rem x 16px = 768px */
+    html{
+        font-size: 50%;
+        /* 8px / 16px = 50%  */
+    }
+
+    .div-styles{
+        height: auto;
+    }
+}
+
+/* XS - PHONE IN PORTRAiT: < 580px */
+@media(max-width: 48rem){
+    /* 590px / 16px = 37rem
+    37rem x 16px = 592px */
+    html{
+        font-size: 43.75%;
+        /* 7px / 16px = 43.75%  */
+    }
+
+    .div-styles{
+        height: auto;
+    }
+
+    .div-styles-2{
+        height: 30rem;
+    }
+
+     h1,h2,h3{
+        letter-spacing: normal;
+    }
+}
+
+/* SMALLER SCREENS: < 500px */
+@media(max-width: 32rem){
+    /* 500px / 16px = 32rem
+    32rem x 16px = 512px */
+    html{
+        font-size: 37.5%;
+        /* 6px / 16px = 37.5%  */
+    }
+
+    .div-styles{
+        padding: 10px;
+    }
+
+    .div-styles-2{
+        height: 35rem;
+         gap: 10px;
+    }
+
+    .text{
+        font-weight: 400;
+    }
+
+    .sub-section{
+        gap: 1px;
+    }
+
+    /* .style-1{
+       
+    } */
+
+    .style-2{
+        padding: 3px;
+        font-size: 10px;
+        width: 55px;
+        padding: 2px;
+    }
+
+    .sub-container{
+        display: inline-block;
+    }
+
+    .form-class{
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3{
+        font-weight: 500;
+    }
+
+    h1,h2,h3{
+        letter-spacing: normal;
+    }
+
+    h1{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .main-class{
+        display: inline-block;
+    }
+
+    .div-main-text{
+        width: auto;
+    }
+    
+   .div-text-display{
+     width: auto;
+   }
+
+   .div-text{
+     border-bottom: 2px solid var(--White);
+   }
+
+}
